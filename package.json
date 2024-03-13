@@ -5,13 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "ecindho \"Error: no test specified\" && exit 1" ,
+    "test": "ecindho \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.3.0",
+    "cors": "^2.8.5",
     "express": "^4.18.3",
     "fs": "^0.0.1-security",
     "mime-types": "^2.1.35",

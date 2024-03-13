@@ -4,10 +4,14 @@ import multer from 'multer';
 import fs from 'fs';
 import { v4 as uuidv4 } from 'uuid';
 import mime from 'mime-types';
-
+import cors from 'cors';
 const app = express();
 const port = 3000;
-
+app.use(cors(
+    {
+        origin: "*",
+    }
+));
 const genAI = new GoogleGenerativeAI("AIzaSyAyxaBagjX2gAkoNlq7KuRelw7scYLdxU4");
 
 // Multer storage configuration
